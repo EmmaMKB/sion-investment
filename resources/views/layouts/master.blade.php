@@ -80,7 +80,6 @@
                         </nav>
                     </div>
                     <div class="rs-header-right">
-
                         <div class="rs-header-btn">
                             <a class="rs-btn has-theme-orange has-icon has-bg" href="#">Get In Touch
                                 <span class="icon-box">
@@ -119,7 +118,7 @@
                     <div class="rs-header-left">
                         <div class="rs-header-logo-wrapper">
                             <div class="rs-header-logo">
-                                <a href="{{ route('home') }}"><img src="assets/images/logo/logo-blue-2.png"
+                                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-blue-2.png') }}"
                                         alt="logo"></a>
                             </div>
                         </div>
@@ -147,7 +146,7 @@
                     </div>
                     <div class="rs-header-right">
 
-                        <div class="rs-header-btn">
+                        {{-- <div class="rs-header-btn">
                             <a class="rs-btn has-theme-orange has-icon has-bg" href="#">Get In Touch
                                 <span class="icon-box">
                                     <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -162,7 +161,7 @@
                                     </svg>
                                 </span>
                             </a>
-                        </div>
+                        </div> --}}
                         <div class="rs-header-hamburger">
                             <div class="sidebar-toggle">
                                 <a class="bar-icon" href="javascript:void(0)">
@@ -498,9 +497,6 @@
     <!-- Body main wrapper start -->
     <main>
         @yield('content')
-
-
-
     </main>
     <!-- Body main wrapper end -->
 
@@ -604,7 +600,7 @@
     <script src="{{ asset('assets/js/vendor/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/waypoints.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/bootstrap.bundle.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/js/plugins/meanmenu.min.js') }}"></script> --}}
+    <script src="{{ asset('assets/js/plugins/meanmenu.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/swiper.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/wow.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/magnific-popup.min.js') }}"></script>

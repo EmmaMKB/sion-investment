@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/services', function () {
-    return view('services.index');
-})->name('services');
+Route::get('/services/', [ServicesController::class, 'index'])->name('services');
+Route::get('/services/{slug}', [ServicesController::class, 'get'])->name('services.details');
+

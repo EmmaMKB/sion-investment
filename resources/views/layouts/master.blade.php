@@ -44,7 +44,7 @@
 
     <!-- preloader end -->
 
-    <!-- Header area start -->
+     <!-- Header area start -->
     <header>
         <div class="rs-header-area rs-header-one rs-sticky-header" id="rs-sticky-header">
             <div class="container-fluid g-0">
@@ -52,36 +52,34 @@
                     <div class="rs-header-left">
                         <div class="rs-header-logo-wrapper">
                             <div class="rs-header-logo">
-                                <a href="{{ route('home') }}"><img
-                                        src="{{ asset('assets/images/logo/logo-blue-2.png') }}"
-                                        alt="logo-sion-investment"></a>
+                                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-blue-2.png') }}" alt="logo"></a>
                             </div>
                         </div>
                     </div>
                     <div class="rs-header-menu">
-                        <nav id="mobile-menu-two" class="main-menu">
+                        <nav id="mobile-menu" class="main-menu">
                             <ul class="multipage-menu">
-                                <li class="{{ request()->routeIs('/') ? 'active' : '' }}">
+                                <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
                                     <a href="{{ route('home') }}">Accueil</a>
                                 </li>
                                 <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                                     <a href="{{ route('about') }}">A propos de nous</a>
                                 </li>
-                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
+                                <li class="{{ request()->routeIs('services*') ? 'active' : '' }}">
                                     <a href="{{ route('services') }}">Services</a>
                                 </li>
-                                <li class="{{ request()->routeIs('products/*') ? 'active' : '' }}">
-                                    <a href="{{ route('products') }}">Products</a>
-                                </li>
-                                <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                    <a href="{{ route('contact') }}">Contact</a>
+                                <li class="{{ request()->routeIs('products*') ? 'active' : '' }}">
+                                    <a href="{{ route('products') }}">Produits</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="rs-header-right">
+                        <!-- search area start -->
+
+                        <!-- search area end -->
                         <div class="rs-header-btn">
-                            <a class="rs-btn has-theme-orange has-icon has-bg" href="#">Get In Touch
+                            <a class="rs-btn has-theme-orange has-icon has-bg" href="{{ route('contact') }}">Entrez en contact
                                 <span class="icon-box">
                                     <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path
@@ -99,8 +97,8 @@
                         <div class="rs-header-hamburger">
                             <div class="sidebar-toggle">
                                 <a class="bar-icon" href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
-                                        viewBox="0 0 21 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
                                         <path
                                             d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
                                             fill="#616161"></path>
@@ -118,8 +116,7 @@
                     <div class="rs-header-left">
                         <div class="rs-header-logo-wrapper">
                             <div class="rs-header-logo">
-                                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-blue-2.png') }}"
-                                        alt="logo"></a>
+                                <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-blue-2.png') }}" alt="logo"></a>
                             </div>
                         </div>
                     </div>
@@ -132,22 +129,21 @@
                                 <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                                     <a href="{{ route('about') }}">A propos de nous</a>
                                 </li>
-                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
+                                <li class="{{ request()->routeIs('services*') ? 'active' : '' }}">
                                     <a href="{{ route('services') }}">Services</a>
                                 </li>
-                                <li class="{{ request()->routeIs('products') ? 'active' : '' }}">
-                                    <a href="{{ route('products') }}">Products</a>
-                                </li>
-                                <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                    <a href="{{ route('contact') }}">Contact</a>
+                                <li class="{{ request()->routeIs('products*') ? 'active' : '' }}">
+                                    <a href="{{ route('products') }}">Produits</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="rs-header-right">
+                        <!-- search area start -->
 
-                        {{-- <div class="rs-header-btn">
-                            <a class="rs-btn has-theme-orange has-icon has-bg" href="#">Get In Touch
+                        <!-- search area end -->
+                        <div class="rs-header-btn">
+                            <a class="rs-btn has-theme-orange has-icon has-bg" href="{{ route('contact') }}">Entrez en contact
                                 <span class="icon-box">
                                     <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path
@@ -161,12 +157,12 @@
                                     </svg>
                                 </span>
                             </a>
-                        </div> --}}
+                        </div>
                         <div class="rs-header-hamburger">
                             <div class="sidebar-toggle">
                                 <a class="bar-icon" href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
-                                        viewBox="0 0 21 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
                                         <path
                                             d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
                                             fill="#616161"></path>
@@ -188,8 +184,8 @@
                 <div class="offcanvas-content">
                     <div class="offcanvas-top d-flex justify-content-between align-items-center mb-20">
                         <div class="offcanvas-logo">
-                            <a class="logo-black" href="{{ route('home') }}"><img
-                                    src="{{ asset('assets/images/logo/logo-blue-2.png') }}" alt="logo"></a>
+                            <a class="logo-black" href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo-blue-2.png') }}"
+                                    alt="logo"></a>
                         </div>
                         <div class="offcanvas-close">
                             <button class="offcanvas-close-icon animation--flip">
@@ -202,234 +198,25 @@
                         </div>
                     </div>
                     <div class="offcanvas-about mb-30 d-none d-sm-block">
-                        <p> Industrie is a modern factory website. specifically designed for who need construction,
-                            firms, oil, architecture and any other small business.
+                        <p> Basée au cœur de la zone de production minière à Lubumbashi, SION Investment
+                             est une entreprise de droit congolais spécialisée dans la fourniture de
+                             solutions intégrées (biens et services) pour le secteur extractif,
+                             œuvrant en RDC depuis l’année 2015.
                         </p>
                     </div>
-                    <div class="offcanvas-gallery d-none d-sm-block">
-                        <div class="offcanvas-gallery-thumb-wrapper">
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-02.png">
-                                    <img src="assets/images/gallery/gallery-thumb-02.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-03.png">
-                                    <img src="assets/images/gallery/gallery-thumb-03.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-04.png">
-                                    <img src="assets/images/gallery/gallery-thumb-04.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-05.png">
-                                    <img src="assets/images/gallery/gallery-thumb-05.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="mobile-menu">
                         <div class="rs-offcanvas-menu mb-25">
-                            <nav id="mobile-menu-two" class="main-menu">
-                                <ul class="multipage-menu">
-                                    <li class="has-mega-menu menu-item-has-children">
-                                        <a href="javascript:void(0)">Home</a>
-                                        <ul class="mega-menu mega-grid-two">
-                                            <li>
-                                                <a href="#" class="title">Multipage</a>
-                                                <ul>
-                                                    <li><a href="index.html">Industry</a></li>
-                                                    <li><a href="red-engineering.html">Red Engineering</a></li>
-                                                    <li><a href="blue-construction.html">Blue Construction</a></li>
-                                                    <li><a href="metallurgy.html">Metallurgy</a></li>
-                                                    <li><a href="orange-construction.html">Orange construction</a></li>
-                                                    <li><a href="laboratory.html">Laboratory</a></li>
-                                                    <li><a href="renewable-energy.html">Renewable Energy</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="title">Multipage</a>
-                                                <ul>
-                                                    <li><a href="oil-gas.html">Oil & Gas</a></li>
-                                                    <li><a href="factory.html">Factory</a></li>
-                                                    <li><a href="robotic.html">Robotic</a></li>
-                                                    <li><a href="architecture.html">Architecture</a></li>
-                                                    <li><a href="manufacturing.html">Manufacturing</a></li>
-                                                    <li><a href="automation.html">Automation</a></li>
-                                                    <li><a href="yellow-construction.html">Yellow Construction</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="title">Onepage</a>
-                                                <ul>
-                                                    <li><a href="industrie-one-page.html">Industrie</a></li>
-                                                    <li><a href="red-engineering-one-page.html">Red Engineering</a>
-                                                    </li>
-                                                    <li><a href="blue-construction-one-page.html">Blue Construction</a>
-                                                    </li>
-                                                    <li><a href="metallurgy-one-page.html">Metallurgy</a></li>
-                                                    <li><a href="orange-construction-one-page.html">Orange
-                                                            Construction</a>
-                                                    </li>
-                                                    <li><a href="laboratory-one-page.html">Laboratory</a></li>
-                                                    <li><a href="renewable-energy-one-page.html">Renewable Energy</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="title">Onepage</a>
-                                                <ul>
-                                                    <li><a href="oil-gas-one-page.html">Oil Gas</a></li>
-                                                    <li><a href="factory-one-page.html">Factory</a></li>
-                                                    <li><a href="robotic-one-page.html">Robotic</a></li>
-                                                    <li><a href="architecture-one-page.html">Architecture</a></li>
-                                                    <li><a href="manufacturing-one-page.html">Manufacturing</a></li>
-                                                    <li><a href="automation-one-page.html">Automation</a></li>
-                                                    <li><a href="yellow-construction-one-page.html">Yellow
-                                                            Construction</a>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- about menu -->
-                                    <li class="menu-item-has-children">
-                                        <a href="about.html">About</a>
-                                        <ul class="submenu last-children">
-                                            <li>
-                                                <a href="about.html">About Us 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="about-two.html">About Us 02</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- page menu -->
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0)">Pages</a>
-                                        <ul class="submenu last-children">
-                                            <li class=" has-arrow">
-                                                <a href="javascript:void(0)">Services</a>
-                                                <ul class="submenu">
-                                                    <li><a href="services.html">Services</a></li>
-                                                    <li><a href="services-details.html">Services Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class=" has-arrow">
-                                                <a href="javascript:void(0)">Team</a>
-                                                <ul class="submenu">
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class=" has-arrow">
-                                                <a href="javascript:void(0)">Project</a>
-                                                <ul class="submenu">
-                                                    <li><a href="portfolio.html">Project</a></li>
-                                                    <li><a href="portfolio-details.html">Project Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="pricing.html">Pricing Plan</a>
-                                            </li>
-                                            <li class=" has-arrow">
-                                                <a href="shop.html">Shop</a>
-                                                <ul class="submenu">
-                                                    <li><a href="shop.html">Product</a></li>
-                                                    <li><a href="shop-details.html">Product Details</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="faq.html">Faq</a>
-                                            </li>
-                                            <li>
-                                                <a href="appointment.html">Appointment</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- elements menu -->
-                                    <li class="has-mega-menu menu-item-has-children">
-                                        <a href="javascript:void(0)">Elements</a>
-                                        <ul class="mega-menu mega-grid">
-                                            <li>
-                                                <a href="#" class="title">Elements Layout</a>
-                                                <ul>
-                                                    <li><a href="elements-features.html">Features</a></li>
-                                                    <li><a href="elements-advance-tab.html">Advance Tab</a></li>
-                                                    <li><a href="elements-work-process.html">Work Process</a></li>
-                                                    <li><a href="elements-counter.html">Counter</a></li>
-                                                    <li><a href="elements-gsap.html">GSAP</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="title">Elements Layout</a>
-                                                <ul>
-                                                    <li><a href="elements-services.html">Services Box</a></li>
-                                                    <li><a href="elements-team.html">Team</a></li>
-                                                    <li><a href="elements-pricing.html">Pricing</a></li>
-                                                    <li><a href="elements-portfolio.html">Project</a></li>
-                                                    <li><a href="#">Coming Soon</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="title">Elements Layout</a>
-                                                <ul>
-                                                    <li><a href="elements-services-tab.html">Services Tab</a></li>
-                                                    <li><a href="elements-testimonial.html">Testimonials</a></li>
-                                                    <li><a href="elements-brand.html">Partner Logo</a></li>
-                                                    <li><a href="elements-blog.html">Blog</a></li>
-                                                    <li><a href="#">Coming Soon</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0)">Blog</a>
-                                        <ul class="submenu last-children">
-                                            <li>
-                                                <a href="blog.html">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-details.html">Blog Details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="contact.html">Contact</a>
-                                        <ul class="submenu last-children">
-                                            <li>
-                                                <a href="contact.html">Contact 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-two.html">Contact 02</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <nav></nav>
                         </div>
                     </div>
                     <div class="offcanvas-contact mb-30">
-                        <h4 class="offcanvas-title-meta">Contact Info</h4>
+                        <h4 class="offcanvas-title-meta">Contacts</h4>
                         <ul>
                             <li class="d-flex align-items-center gap-15">
                                 <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18"
-                                        viewBox="0 0 14 18" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18"
+                                        fill="none">
                                         <path
                                             d="M11.8768 9.68475C11.3059 10.835 10.5331 11.9818 9.74128 13.0109C8.95198 14.0368 8.15999 14.9249 7.5643 15.5572C7.48514 15.6412 7.40956 15.7206 7.33802 15.7951C7.26648 15.7206 7.1909 15.6412 7.11174 15.5572C6.51605 14.9249 5.72406 14.0368 4.93476 13.0109C4.14299 11.9818 3.37019 10.835 2.79925 9.68475C2.22242 8.52266 1.89032 7.43373 1.89032 6.5C1.89032 3.50846 4.32934 1.08333 7.33802 1.08333C10.3467 1.08333 12.7857 3.50846 12.7857 6.5C12.7857 7.43373 12.4536 8.52266 11.8768 9.68475ZM7.33802 17.3333C7.33802 17.3333 13.8753 11.1732 13.8753 6.5C13.8753 2.91015 10.9484 0 7.33802 0C3.7276 0 0.800781 2.91015 0.800781 6.5C0.800781 11.1732 7.33802 17.3333 7.33802 17.3333Z"
                                             fill="#6D6D6D"></path>
@@ -439,14 +226,13 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="#"> 2096 New Market, New Road <br>
-                                        North Carolina, USA </a>
+                                    <a href="#"> 18, Av. du Cobalt, Q/ Makomeno, C/ Lubumbashi, Haut-Katanga, RDC </a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center gap-15">
                                 <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 16 16" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
                                         <path
                                             d="M3.65387 1.32849C3.40343 1.00649 2.92745 0.976861 2.639 1.26531L1.60508 2.29923C1.1216 2.78271 0.94387 3.46766 1.1551 4.06847C2.00338 6.48124 3.39215 8.74671 5.32272 10.6773C7.25329 12.6078 9.51876 13.9966 11.9315 14.8449C12.5323 15.0561 13.2173 14.8784 13.7008 14.3949L14.7347 13.361C15.0231 13.0726 14.9935 12.5966 14.6715 12.3461L12.3653 10.5524C12.2008 10.4245 11.9866 10.3793 11.7845 10.4298L9.59541 10.9771C9.00082 11.1257 8.37183 10.9515 7.93845 10.5181L5.48187 8.06155C5.04849 7.62817 4.87427 6.99919 5.02292 6.40459L5.57019 4.21553C5.62073 4.01336 5.57552 3.79918 5.44758 3.63468L3.65387 1.32849ZM1.88477 0.511076C2.62689 -0.231039 3.8515 -0.154797 4.49583 0.673634L6.28954 2.97983C6.6187 3.40304 6.73502 3.95409 6.60498 4.47423L6.05772 6.66329C5.99994 6.8944 6.06766 7.13888 6.2361 7.30732L8.69268 9.7639C8.86113 9.93235 9.1056 10.0001 9.33671 9.94229L11.5258 9.39502C12.0459 9.26499 12.597 9.3813 13.0202 9.71047L15.3264 11.5042C16.1548 12.1485 16.231 13.3731 15.4889 14.1152L14.455 15.1492C13.7153 15.8889 12.6089 16.2137 11.5778 15.8512C9.01754 14.9511 6.61438 13.4774 4.56849 11.4315C2.5226 9.38562 1.04895 6.98246 0.148838 4.42225C-0.213682 3.39112 0.11113 2.28472 0.85085 1.545L1.88477 0.511076Z"
                                             fill="#6D6D6D"></path>
@@ -456,13 +242,13 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="tel:+12346691234"> +123-4669-1234 </a>
+                                    <a href="tel:+243990000000"> +243 999 000 00 00 </a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center gap-15">
                                 <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 16 16" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
                                         <path
                                             d="M2 2C0.895431 2 0 2.89543 0 4V12L2.58386e-05 12.0103C0.00555998 13.1101 0.898859 14 2 14H7.5C7.77614 14 8 13.7761 8 13.5C8 13.2239 7.77614 13 7.5 13H2C1.53715 13 1.14774 12.6855 1.03376 12.2586L6.67417 8.7876L8 9.5831L15 5.3831V8.5C15 8.77614 15.2239 9 15.5 9C15.7761 9 16 8.77614 16 8.5V4C16 2.89543 15.1046 2 14 2H2ZM5.70808 8.20794L1 11.1052V5.3831L5.70808 8.20794ZM1 4.2169V4C1 3.44772 1.44772 3 2 3H14C14.5523 3 15 3.44772 15 4V4.2169L8 8.4169L1 4.2169Z"
                                             fill="#6D6D6D"></path>
@@ -472,18 +258,9 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                    <a href="mailto:contact@sion-investment.com">contact@sion-investment.com</a>
                                 </div>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="offcanvas-social">
-                        <h4 class="offcanvas-title-meta">Subscribe & Follow</h4>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -540,7 +317,8 @@
                     <div class="rs-footer-widget footer-1-col-3">
                         <h5 class="rs-footer-widget-title">Newsletter</h5>
                         <div class="rs-footer-widget-content">
-                            <p class="descrip">Souscrivez a notre newsletter pour recevoir nos dernières actualités.</p>
+                            <p class="descrip">Souscrivez a notre newsletter pour recevoir nos dernières actualités.
+                            </p>
                             <form action="#">
                                 <div class="rs-footer-subscribe-input">
                                     <input type="email" placeholder="Votre adresse email" required>

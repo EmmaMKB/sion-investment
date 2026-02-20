@@ -1,19 +1,21 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Équipements miniers",
-      "slug": "mining-equipments",
-      "subtitle": "We provide quality materials you can trust.",
-      "description": "We guarantee you access to a supply chain of the highest quality building materials, ensuring the durability and compliance of all your projects, from foundation to finishes : ",
-      "image_path": "assets/images/products/thumb-01.png",
-      "banner_image": "assets/images/products/banner-01.jpg",
-      "products_list": [
-        "Équipements de broyage",
-        "Systèmes de convoyage",
-        "Machines",
-        "Pompes"
-      ]
+        "id": 1,
+        "name": "Équipements miniers",
+        "slug": "mining-equipments",
+        "subtitle": "We provide quality materials you can trust.",
+        "description": "We guarantee you access to a supply chain of the highest quality building materials, ensuring the durability and compliance of all your projects, from foundation to finishes : ",
+        "image_path": "assets/images/products/thumb-01.png",
+        "banner_image": "assets/images/products/banner-01.jpg",
+        "products_list": [
+            "Équipements de broyage",
+            "Systèmes de convoyage",
+            "Machines",
+            "Pompes"
+        ],
+        "thumbnail": "assets/images/products/thumb-01.png",
+        "cover": "assets/images/products/thumb-01.png"
     },
     {
       "id": 2,

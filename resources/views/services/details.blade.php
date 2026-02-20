@@ -34,7 +34,7 @@
                 <div class="col-xl-8 col-lg-8">
                     <div class="rs-services-details-wrapper">
                         <div class="rs-services-details-thumb">
-                            <img src="{{ asset('assets/images/services/details/services-details-01.png') }}" alt="image">
+                            <img src="{{ asset($service['cover']) }}" alt="image">
                         </div>
                         <h3 class="rs-services-details-title">{{ $service['name'] }}</h3>
                         <p class="mb-25 mt-15"><strong>{{ $service['subtitle'] }}</strong></p>

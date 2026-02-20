@@ -1,119 +1,135 @@
 {
-  "services": [
-    {
-      "id": 1,
-      "name": "Construction industrielle",
-      "slug": "construction",
-      "subtitle": "Construction de structures métalliques dans le secteur minier.",
-      "description": "Nous concevons, fabriquons et installons des solutions d'ingénierie métallique qui allient résistance, légèreté et précision pour optimiser votre espace et votre productivité :",
-      "image_path": "assets/images/products/thumb-01.png",
-      "banner_image": "assets/images/products/banner-01.jpg",
-      "services_list": [
-        "Structures métalliques",
-        "Ecoles",
-        "Terrains de sport"
-        ]
-    },
-    {
-      "id": 2,
-      "name": "Travaux routiers et de revêtement",
-      "slug": "road-works",
-      "subtitle": "Travaux routiers et de revêtement.",
-      "description": "Nous concevons, fabriquons et installons des solutions d'ingénierie métallique qui allient résistance, légèreté et précision pour optimiser votre espace et votre productivité :",
-      "image_path": "assets/images/products/thumb-02.png",
-      "banner_image": "assets/images/products/banner-02.jpg",
-      "services_list": [
-        "Routes",
-        "Plateformes",
-        "Barrage de résidus miniers",
-        "Supports miniers",
-        "Ponts"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Maintenance industrielle",
-      "slug": "industrial-maintenance",
-      "subtitle": "Maintenance industrielle.",
-      "description": "Nous offrons des services de maintenance industrielle pour assurer le bon fonctionnement de vos équipements et installations :",
-      "image_path": "assets/images/products/thumb-03.png",
-      "banner_image": "assets/images/products/banner-03.jpg",
-      "services_list": [
-        "Contrôle qualité et fiabilité",
-        "Maintenance préventive",
-        "Maintenance électrique",
-        "Maintenance corrective",
-        "Maintenance mécanique"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Services de regarnissage",
-      "slug": "coating-services",
-      "subtitle": "Services de regarnissage.",
-      "description": "Thanks to an extensive stock of high-quality original or compatible spare parts, we guarantee the responsiveness you need to keep your heavy equipment and production lines in perfect working order:",
-      "image_path": "assets/images/products/thumb-04.png",
-      "banner_image": "assets/images/products/banner-04.jpg",
-      "services_list": [
-        "Installation des revêtements et des fixations",
-        "Inspection de l'état des revêtements"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Logistique et transport",
-      "slug": "logistics-transport",
-      "subtitle": "Logistique et transport pour les opérations minières.",
-      "description": "Nous offrons des services de logistique et de transport spécialisés pour répondre aux besoins uniques du secteur minier :",
-      "image_path": "assets/images/products/thumb-05.png",
-      "banner_image": "assets/images/products/banner-05.jpg",
-      "services_list": [
-        "Transport de marchandises (minéraux) et de personnel",
-        "Location de machines minières et travaux d'infrastructure routière"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Mécanisation agricole",
-      "slug": "agricultural-mechanization",
-      "subtitle": "Mécanisation agricole.",
-      "description": "Nous offrons des services de mécanisation agricole pour optimiser vos opérations agricoles :",
-      "image_path": "assets/images/products/thumb-06.png",
-      "banner_image": "assets/images/products/banner-06.jpg",
-      "services_list": [
-        "Mécanisations agricoles",
-        "Location et vente de tracteurs et d'outils agricoles",
-        "Conseil en projets sociaux"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Travaux miniers",
-      "slug": "mining-works",
-      "subtitle": "Travaux miniers.",
-      "description": "Nous offrons des services de travaux miniers pour optimiser vos opérations minières :",
-      "image_path": "assets/images/products/thumb-07.png",
-      "banner_image": "assets/images/products/banner-07.jpg",
-      "services_list": [
-        "Exploitation",
-        "Forages",
-        "Gestion environnementale"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Services de Nettoyage",
-      "slug": "cleaning-services",
-      "subtitle": "Services de nettoyage pour tous types d'installations industrielles.",
-      "description": "Nous offrons des services de nettoyage professionnels pour garantir un environnement de travail sain et propre dans vos installations industrielles :",
-      "image_path": "assets/images/products/thumb-08.png",
-      "banner_image": "assets/images/products/banner-08.jpg",
-      "services_list": [
-        "Industriel",
-        "Résidentiel",
-        "Bureaux administratifs",
-        "Autres lieux : tous les autres lieux et terrains nécessitant des travaux de nettoyage"
-      ]
-    }
-  ]
+    "services": [
+        {
+            "id": 1,
+            "name": "Construction industrielle",
+            "slug": "construction",
+            "subtitle": "Construction de structures métalliques dans le secteur minier.",
+            "description": "Nous concevons, fabriquons et installons des solutions d'ingénierie métallique qui allient résistance, légèreté et précision pour optimiser votre espace et votre productivité :",
+            "image_path": "assets/images/products/thumb-01.png",
+            "banner_image": "assets/images/products/banner-01.jpg",
+            "services_list": [
+                "Structures métalliques",
+                "Ecoles",
+                "Terrains de sport"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-01.png",
+            "cover": "assets/images/services/cover-01.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Travaux routiers et de revêtement",
+            "slug": "road-works",
+            "subtitle": "Des voies durables pour une mobilité fluide",
+            "description": "Aménagement et bitumage de réseaux routiers performants. Nous assurons la pérennité de vos accès grâce à des matériaux de haute résistance et une finition de précision.",
+            "image_path": "assets/images/products/thumb-02.png",
+            "banner_image": "assets/images/products/banner-02.jpg",
+            "services_list": [
+                "Routes",
+                "Plateformes",
+                "Barrage de résidus miniers",
+                "Supports miniers",
+                "Ponts"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-02.png",
+            "cover": "assets/images/services/cover-02.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Maintenance industrielle",
+            "slug": "industrial-maintenance",
+            "subtitle": "Maximisez votre productivité sans interruption",
+            "description": "Nous offrons des services de maintenance industrielle pour assurer le bon fonctionnement de vos équipements et installations :",
+            "image_path": "assets/images/products/thumb-03.png",
+            "banner_image": "assets/images/products/banner-03.jpg",
+            "services_list": [
+                "Contrôle qualité et fiabilité",
+                "Maintenance préventive",
+                "Maintenance électrique",
+                "Maintenance corrective",
+                "Maintenance mécanique"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-03.png",
+            "cover": "assets/images/services/cover-03.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Services de regarnissage",
+            "slug": "coating-services",
+            "subtitle": "Donnez une seconde vie à vos composants clés.",
+            "description": "Expertise en protection contre l'usure, l'abrasion et la corrosion. Nos solutions de revêtement technique prolongent considérablement la durée de vie de vos équipements critiques.",
+            "image_path": "assets/images/products/thumb-04.png",
+            "banner_image": "assets/images/products/banner-04.jpg",
+            "services_list": [
+                "Installation des revêtements et des fixations",
+                "Inspection de l'état des revêtements"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-04.png",
+            "cover": "assets/images/services/cover-04.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Logistique et transport",
+            "slug": "logistics-transport",
+            "subtitle": "Logistique et transport pour les opérations minières.",
+            "description": "Nous offrons des services de logistique et de transport spécialisés pour répondre aux besoins uniques du secteur minier :",
+            "image_path": "assets/images/products/thumb-05.png",
+            "banner_image": "assets/images/products/banner-05.jpg",
+            "services_list": [
+                "Transport de marchandises (minéraux) et de personnel",
+                "Location de machines minières et travaux d'infrastructure routière"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-05.png",
+            "cover": "assets/images/services/cover-05.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Mécanisation agricole",
+            "slug": "agricultural-mechanization",
+            "subtitle": "L'innovation au service de vos rendements agricoles.",
+            "description": "Modernisation de vos exploitations par des équipements de pointe. Nous facilitons la transition vers une agriculture intensive, efficace et technologique.",
+            "image_path": "assets/images/products/thumb-06.png",
+            "banner_image": "assets/images/products/banner-06.jpg",
+            "services_list": [
+                "Mécanisations agricoles",
+                "Location et vente de tracteurs et d'outils agricoles",
+                "Conseil en projets sociaux"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-06.png",
+            "cover": "assets/images/services/cover-06.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Travaux miniers",
+            "slug": "mining-works",
+            "subtitle": "L'expertise terrain pour une extraction sûre et efficace.",
+            "description": "Soutien complet aux opérations minières, de l'excavation à la gestion des résidus. Nous opérons dans le strict respect des normes de sécurité et environnementales.",
+            "image_path": "assets/images/products/thumb-07.png",
+            "banner_image": "assets/images/products/banner-07.jpg",
+            "services_list": [
+                "Exploitation",
+                "Forages",
+                "Gestion environnementale"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-07.png",
+            "cover": "assets/images/services/cover-07.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Services de Nettoyage",
+            "slug": "cleaning-services",
+            "subtitle": "Un environnement sain pour une performance accrue.",
+            "description": "Nous offrons des services de nettoyage professionnels pour garantir un environnement de travail sain et propre dans vos installations industrielles :",
+            "image_path": "assets/images/products/thumb-08.png",
+            "banner_image": "assets/images/products/banner-08.jpg",
+            "services_list": [
+                "Industriel",
+                "Résidentiel",
+                "Bureaux administratifs",
+                "Autres lieux : tous les autres lieux et terrains nécessitant des travaux de nettoyage"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-08.png",
+            "cover": "assets/images/services/cover-08.jpg"
+        }
+    ]
 }

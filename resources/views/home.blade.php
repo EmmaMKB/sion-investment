@@ -207,7 +207,6 @@
                                     </button>
                                 </li>
                             @endforeach
-
                         </ul>
                     </div>
                 </div>
@@ -222,8 +221,8 @@
                                         <div class="row g-5 align-items-center">
                                             <div class="col-xl-6 col-lg-6">
                                                 <div class="rs-services-tab-content-thumb has-clip">
-                                                    <img src="assets/images/services/services-thumb-03.png"
-                                                        alt="image">
+                                                    <img src="{{ asset($service['thumbnail']) }}"
+                                                        alt="sion investment {{ $service['name'] }}">
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 col-lg-6">

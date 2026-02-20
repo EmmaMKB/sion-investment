@@ -14,7 +14,7 @@
                         <div class="rs-breadcrumb-menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="index.html">Industrie</a></span></li>
+                                    <li><span><a href="{{ route('home') }}">Accueil</a></span></li>
                                     <li><span>Services</span></li>
                                 </ul>
                             </nav>

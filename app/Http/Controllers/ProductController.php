@@ -36,6 +36,12 @@ class ProductController extends Controller
                 break;
             }
         }
-        return view('products.show', ['product' => $product]);
+
+        $otherProducts = array_filter($products, function ($p) use ($slug) {
+            return $p['slug'] !== $slug;
+        });
+
+        return view('products.details',
+        ['product' => $product, 'otherProducts' => $otherProducts]);
     }
 }

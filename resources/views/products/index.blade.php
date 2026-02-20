@@ -35,11 +35,11 @@
                         <div class="rs-services-wrapper">
                             <div class="rs-services-item">
                                 <div class="rs-services-thumb">
-                                    <a href="#"> <img src="assets/images/services/services-thumb-08.png"
+                                    <a href="{{ route('products.details', $product['slug']) }}"> <img src="assets/images/services/services-thumb-08.png"
                                             alt="image"></a>
                                 </div>
                                 <div class="rs-services-content">
-                                    <h5 class="rs-services-title"><a href="#"> {{ $product['name'] }}
+                                    <h5 class="rs-services-title"><a href="{{ route('products.details', $product['slug']) }}"> {{ $product['name'] }}
                                         </a></h5>
                                     <p class="descrip">{{ $product['subtitle'] }}</p>
                                     <div class="rs-services-number"></div>
@@ -47,7 +47,7 @@
                                         <div class="rs-services-text-btn underline">
                                             <a class="rs-text-btn" href="{{ route('products.details', $product['slug']) }}">Voir Plus</a>
                                         </div>
-                                        <a class="rs-square-btn has-icon has-light-bg" href="#">
+                                        <a class="rs-square-btn has-icon has-light-bg" href="{{ route('products.details', $product['slug']) }}">
                                             <span class="icon-box">
                                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" width="12"
                                                     height="10" viewBox="0 0 12 10" fill="none">

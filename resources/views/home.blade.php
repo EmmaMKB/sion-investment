@@ -67,7 +67,7 @@
                                                     </div>
 
                                                     <div class="rs-feature-video">
-                                                        <a href="https://www.youtube.com/watch?v=Yue48fUXuqI"
+                                                        <a href="https://www.youtube.com/watch?v=6ZxAUMwsU6c"
                                                             class="rs-play-btn popup-video"><i class="ri-play-fill"></i></a>
                                                     </div>
                                                 </div>

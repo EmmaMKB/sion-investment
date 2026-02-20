@@ -84,7 +84,6 @@
                                         <span><img src="{{ asset('assets/images/icon/download-01.svg') }}" alt="#"></span>
                                     </a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>

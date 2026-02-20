@@ -61,19 +61,19 @@
                     <div class="rs-header-menu">
                         <nav id="mobile-menu-two" class="main-menu">
                             <ul class="multipage-menu">
-                                <li class="active">
+                                <li class="{{ request()->routeIs('/') ? 'active' : '' }}">
                                     <a href="{{ route('home') }}">Accueil</a>
                                 </li>
-                                <li>
+                                <li class="{{ request()->routeIs('about') ? 'active' : '' }}">
                                     <a href="{{ route('about') }}">A propos de nous</a>
                                 </li>
-                                <li>
+                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
                                     <a href="{{ route('services') }}">Services</a>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0)">Products</a>
+                                <li class="{{ request()->routeIs('products/*') ? 'active' : '' }}">
+                                    <a href="{{ route('products') }}">Products</a>
                                 </li>
-                                <li>
+                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
                                     <a href="javascript:void(0)">Contact</a>
                                 </li>
                             </ul>
@@ -136,7 +136,7 @@
                                     <a href="{{ route('services') }}">Services</a>
                                 </li>
                                 <li class="{{ request()->routeIs('products') ? 'active' : '' }}">
-                                    <a href="javascript:void(0)">Products</a>
+                                    <a href="{{ route('products') }}">Products</a>
                                 </li>
                                 <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
                                     <a href="javascript:void(0)">Contact</a>
@@ -513,14 +513,6 @@
                                     alt="sion investment logo"></a>
                         </div>
                         <div class="rs-footer-widget-content">
-                            <p class="rs-footer-widget-description">
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                Ipsum
-                                passages, and more recently works.
-                            </p>
-                            <div class="rs-footer-widget-stroke-text">
-                                <h3 class="rs-footer-stroke-text">Since 2018</h3>
-                            </div>
                             <div class="rs-footer-copyright underline">
                                 <p>© <span id="year"></span> Designed by <a href="https://kreativetouch.agency/"
                                         target="_blank">Kreative Touch</a>
@@ -531,20 +523,14 @@
                 </div>
                 <div class="rs-footer-item">
                     <div class="rs-footer-widget footer-1-col-2">
-                        <h5 class="rs-footer-widget-title">Useful Links</h5>
+                        <h5 class="rs-footer-widget-title">Liens Utiles</h5>
                         <div class="rs-footer-widget-content">
                             <div class="rs-footer-widget-links">
                                 <ul>
-                                    <li> <a href="#">About Us</a> </li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Terms of use</a></li>
+                                    <li> <a href="{{ route('about') }}">A propos de nous</a> </li>
+                                    <li><a href="{{ route('products') }}">Nos Produits</a></li>
+                                    <li><a href="{{ route('services') }}">Nos Services</a></li>
+                                    <li><a href="{{ route('home') }}">Accueil</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -554,15 +540,14 @@
                     <div class="rs-footer-widget footer-1-col-3">
                         <h5 class="rs-footer-widget-title">Newsletter</h5>
                         <div class="rs-footer-widget-content">
-                            <p class="descrip">Subscribe for the latest news. Stay updated on the latest trends
-                                industrie.</p>
+                            <p class="descrip">Souscrivez a notre newsletter pour recevoir nos dernières actualités.</p>
                             <form action="#">
                                 <div class="rs-footer-subscribe-input">
-                                    <input type="email" placeholder="Enter Your Email">
+                                    <input type="email" placeholder="Votre adresse email" required>
                                 </div>
                             </form>
                             <div class="rs-footer-btn">
-                                <button type="submit" class="rs-btn has-theme-orange has-icon has-bg">Subscribe Now
+                                <button type="submit" class="rs-btn has-theme-orange has-icon has-bg">Je souscris
                                     <span class="icon-box">
                                         <svg class="icon-first" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 32 32">

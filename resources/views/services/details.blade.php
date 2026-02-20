@@ -76,7 +76,7 @@
                             <h5 class="mb-25 sidebar-widget-title">Téléchargez notre profil</h5>
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{ route('download.profile') }}">
                                         <div class="left">
                                             <span><img src="{{ asset('assets/images/icon/docs.svg') }}" alt="#"></span>
                                             Profil d'Entreprise Sion Investment

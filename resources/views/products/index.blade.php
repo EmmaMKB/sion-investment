@@ -9,13 +9,13 @@
                 <div class="col-xxl-6 col-xl-8 col-lg-8">
                     <div class="rs-breadcrumb-content-wrapper">
                         <div class="rs-breadcrumb-title-wrapper">
-                            <h1 class="rs-breadcrumb-title">Services</h1>
+                            <h1 class="rs-breadcrumb-title">Nos Produits</h1>
                         </div>
                         <div class="rs-breadcrumb-menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="index.html">Industrie</a></span></li>
-                                    <li><span>Services</span></li>
+                                    <li><span><a href="{{ route('home') }}">Accueil</a></span></li>
+                                    <li><span>Produits</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -30,7 +30,7 @@
     <section class="rs-services-area rs-services-three section-space has-theme-orange">
         <div class="container">
             <div class="row g-5 process-counts">
-                @foreach ($services as $service)
+                @foreach ($products as $product)
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="rs-services-wrapper">
                             <div class="rs-services-item">
@@ -39,15 +39,15 @@
                                             alt="image"></a>
                                 </div>
                                 <div class="rs-services-content">
-                                    <h5 class="rs-services-title"><a href="{{ route('services.details', $service['slug']) }}"> {{ $service['name'] }}
+                                    <h5 class="rs-services-title"><a href="#"> {{ $product['name'] }}
                                         </a></h5>
-                                    <p class="descrip">{{ $service['subtitle'] }}</p>
+                                    <p class="descrip">{{ $product['subtitle'] }}</p>
                                     <div class="rs-services-number"></div>
                                     <div class="rs-services-btn-wrapper">
                                         <div class="rs-services-text-btn underline">
-                                            <a class="rs-text-btn" href="{{ route('services.details', $service['slug']) }}">Voir Plus</a>
+                                            <a class="rs-text-btn" href="{{ route('products.details', $product['slug']) }}">Voir Plus</a>
                                         </div>
-                                        <a class="rs-square-btn has-icon has-light-bg" href="{{ route('services.details', $service['slug']) }}">
+                                        <a class="rs-square-btn has-icon has-light-bg" href="#">
                                             <span class="icon-box">
                                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" width="12"
                                                     height="10" viewBox="0 0 12 10" fill="none">

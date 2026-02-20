@@ -34,7 +34,7 @@
                 <div class="col-xl-8 col-lg-8">
                     <div class="rs-services-details-wrapper">
                         <div class="rs-services-details-thumb">
-                            <img src="{{ asset('assets/images/services/details/services-details-01.png') }}" alt="image">
+                            <img src="{{ asset($product['cover']) }}" alt="image">
                         </div>
                         <h3 class="rs-services-details-title">{{ $product['name'] }}</h3>
                         <p class="mb-25 mt-15"><strong>{{ $product['subtitle'] }}</strong></p>
@@ -111,7 +111,7 @@
                                 <h3 class="sidebar-widget-title has-large has-border">Vous avez un <br> projet à nous <br>
                                     confier ?</h3>
                                 <div class="sidebar-widget-btn">
-                                    <a class="rs-btn has-theme-orange has-icon has-bg" href="#">Parlons-en
+                                    <a class="rs-btn has-theme-orange has-icon has-bg" href="{{ route('contact') }}">Parlons-en
                                         <span class="icon-box">
                                             <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                                 <path

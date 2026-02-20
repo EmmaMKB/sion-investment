@@ -35,7 +35,7 @@
                         <div class="rs-services-wrapper">
                             <div class="rs-services-item">
                                 <div class="rs-services-thumb">
-                                    <a href="{{ route('products.details', $product['slug']) }}"> <img src="assets/images/services/services-thumb-08.png"
+                                    <a href="{{ route('products.details', $product['slug']) }}"> <img src="{{ asset($product['thumbnail']) }}"
                                             alt="image"></a>
                                 </div>
                                 <div class="rs-services-content">

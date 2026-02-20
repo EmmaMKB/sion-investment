@@ -4,8 +4,8 @@
         "id": 1,
         "name": "Équipements miniers",
         "slug": "mining-equipments",
-        "subtitle": "We provide quality materials you can trust.",
-        "description": "We guarantee you access to a supply chain of the highest quality building materials, ensuring the durability and compliance of all your projects, from foundation to finishes : ",
+        "subtitle": "La puissance et la technologie de pointe pour vos extractions les plus exigeantes",
+        "description": "Une gamme complète de machines robustes et performantes, conçues pour opérer dans les conditions environnementales les plus extrêmes. Que vous ayez besoin d'équipements de broyage, de systèmes de convoyage, de machines ou de pompes, nous avons la solution adaptée à vos besoins pour optimiser votre productivité et votre efficacité dans les opérations minières.",
         "image_path": "assets/images/products/thumb-01.png",
         "banner_image": "assets/images/products/banner-01.jpg",
         "products_list": [
@@ -14,114 +14,123 @@
             "Machines",
             "Pompes"
         ],
-        "thumbnail": "assets/images/products/thumb-01.png",
-        "cover": "assets/images/products/thumb-01.png"
+        "thumbnail": "assets/images/products/thumb-01.jpg",
+        "cover": "assets/images/products/banner-01.jpg"
     },
     {
-      "id": 2,
-      "name": "Pièces de rechange",
-      "slug": "spare-parts",
-      "subtitle": "Reliable Steel Fabrication for Industrial Projects.",
-      "description": "We design, manufacture, and install metal engineering solutions that combine strength, lightness, and precision to optimize your space and productivity:",
-      "image_path": "assets/images/products/thumb-02.png",
-      "banner_image": "assets/images/products/banner-02.jpg",
-      "products_list": [
-        "Tuyaux - raccords",
-        "Pièces automobiles",
-        "Fraiseuses et broyeurs",
-        "Outils (marteaux, cisailles, forets, meuleuses...)",
-        "Autres (accessoires de soudage, boîtes de vitesses, boîtiers de commutation, roulements, vannes, raccords...)"
-      ]
+        "id": 2,
+        "name": "Pièces de rechange",
+        "slug": "spare-parts",
+        "subtitle": "Assurez la continuité de vos opérations avec des composants d'origine certifiée.",
+        "description": "Un vaste stock de pièces mécaniques et hydrauliques pour minimiser vos temps d'arrêt et prolonger la vie de vos machines.",
+        "image_path": "assets/images/products/thumb-02.png",
+        "banner_image": "assets/images/products/banner-02.jpg",
+        "products_list": [
+            "Tuyaux - raccords",
+            "Pièces automobiles",
+            "Fraiseuses et broyeurs",
+            "Outils (marteaux, cisailles, forets, meuleuses...)",
+            "Autres (accessoires de soudage, boîtes de vitesses, boîtiers de commutation, roulements, vannes, raccords...)"
+        ],
+        "thumbnail": "assets/images/products/thumb-02.jpg",
+        "cover": "assets/images/products/banner-02.jpg"
     },
     {
-      "id": 3,
-      "name": "Équipements électriques",
-      "slug": "electrical-equipments",
-      "subtitle": "Industrial and Mining Machinery Supply.",
-      "description": "Nous sommes distributeurs de plusieurs marques d'équipements électriques reconnues internationalement telles que Schneider, Victron, ABB, Legrand, Wago, Atlantic et bien d'autres encore.",
-      "image_path": "assets/images/products/thumb-03.png",
-      "banner_image": "assets/images/products/banner-03.jpg",
-      "products_list": [
-        "Transformateurs",
-        "Moteurs électriques",
-        "Appareils électroménagers",
-        "Générateurs",
-        "Équipements solaires"
-      ]
+        "id": 3,
+        "name": "Équipements électriques",
+        "slug": "electrical-equipments",
+        "subtitle": "Des solutions énergétiques fiables pour alimenter vos infrastructures industrielles",
+        "description": "Distribution basse et haute tension, transformateurs et appareillages de protection répondant aux standards de sécurité internationaux.",
+        "image_path": "assets/images/products/thumb-03.png",
+        "banner_image": "assets/images/products/banner-03.jpg",
+        "products_list": [
+            "Transformateurs",
+            "Moteurs électriques",
+            "Appareils électroménagers",
+            "Générateurs",
+            "Équipements solaires"
+        ],
+        "thumbnail": "assets/images/products/thumb-03.jpg",
+        "cover": "assets/images/products/banner-03.jpg"
     },
     {
-      "id": 4,
-      "name": "Matériaux de construction",
-      "slug": "building-materials",
-      "subtitle": "Authentic Spare Parts for Zero Downtime.",
-      "description": "Thanks to an extensive stock of high-quality original or compatible spare parts, we guarantee the responsiveness you need to keep your heavy equipment and production lines in perfect working order:",
-      "image_path": "assets/images/products/thumb-04.png",
-      "banner_image": "assets/images/products/banner-04.jpg",
-      "products_list": [
-        "Chaux et ciment",
-        "Sable et gravier",
-        "Terre végétale",
-        "Structures métalliques",
-        "Panneaux et dalles de plafond"
-      ]
+        "id": 4,
+        "name": "Matériaux de construction",
+        "slug": "building-materials",
+        "subtitle": "La fondation solide de vos projets avec des matériaux de qualité supérieure",
+        "description": "Fourniture de ciment, agrégats, structures métalliques et adjuvants essentiels à la réussite de vos chantiers de génie civil.",
+        "image_path": "assets/images/products/thumb-04.png",
+        "banner_image": "assets/images/products/banner-05.jpg",
+        "products_list": [
+            "Chaux et ciment",
+            "Sable et gravier",
+            "Terre végétale",
+            "Structures métalliques",
+            "Panneaux et dalles de plafond"
+        ],
+        "thumbnail": "assets/images/products/thumb-04.jpg",
+        "cover": "assets/images/products/banner-04.jpg"
     },
     {
-      "id": 5,
-      "name": "Corps de broyage",
-      "slug": "grinding-bodies",
-      "subtitle": "Heavy-Duty Mobile Machinery.",
-      "description": "For extraction, transport, and handling in extreme conditions, you need the best. Our selection of mining machinery and mobile equipment offers the robustness, power, and innovation needed to optimize your mining productivity and earthmoving operations.",
-      "image_path": "assets/images/products/thumb-05.png",
-      "banner_image": "assets/images/products/banner-05.jpg",
-      "products_list": [
-        "Billes de broyage forgées",
-        "Billes de broyage à haute teneur en chrome et à faible teneur en chrome"
-      ]
+        "id": 5,
+        "name": "Corps de broyage",
+        "slug": "grinding-bodies",
+        "subtitle": "Optimisez votre rendement de fragmentation avec des billes et barres haute performance.",
+        "description": "Solutions de broyage résistantes à l'abrasion et aux chocs, garantissant une granulométrie précise et une consommation réduite.",
+        "image_path": "assets/images/products/thumb-05.png",
+        "banner_image": "assets/images/products/banner-05.jpg",
+        "products_list": [
+            "Billes de broyage forgées",
+            "Billes de broyage à haute teneur en chrome et à faible teneur en chrome"
+        ],
+        "thumbnail": "assets/images/products/thumb-05.jpg",
+        "cover": "assets/images/products/banner-05.jpg"
     },
     {
-      "id": 6,
-      "name": "Intrants agricoles",
-      "slug": "agricultural-inputs",
-      "subtitle": "Essential Chemicals for Mining and Metallurgy.",
-      "description": "Control the quality of your products and the efficiency of your operations with high-purity chemicals and reagents. ",
-      "image_path": "assets/images/products/thumb-06.png",
-      "banner_image": "assets/images/products/banner-06.jpg",
-      "products_list": [
-        "Engrais",
-        "Semences",
-        "Herbicides",
-        "Pesticides"
-      ]
+        "id": 6,
+        "name": "Intrants agricoles",
+        "slug": "agricultural-inputs",
+        "subtitle": "Fertilisez votre avenir avec des produits adaptés à la spécificité de vos sols.",
+        "description": "Une sélection rigoureuse d'engrais, de semences et de produits phytosanitaires pour maximiser la productivité de vos cultures.",
+        "image_path": "assets/images/products/thumb-06.png",
+        "banner_image": "assets/images/products/banner-06.jpg",
+        "products_list": ["Engrais", "Semences", "Herbicides", "Pesticides"],
+        "thumbnail": "assets/images/products/thumb-06.jpg",
+        "cover": "assets/images/products/banner-06.jpg"
     },
     {
-      "id": 7,
-      "name": "Consommables miniers",
-      "slug": "mining-consumables",
-      "subtitle": "Diverse Supplies for All Industrial Operations.",
-      "description": "From the smallest to the largest, every component of your infrastructure matters. We offer a complete range of industrial consumables and accessories to ensure the smooth operation and maintenance of your facilities:",
-      "image_path": "assets/images/products/thumb-07.png",
-      "banner_image": "assets/images/products/banner-07.jpg",
-      "products_list": [
-        "Produits chimiques (réactifs, soufre, acide sulfurique, agents rx...)",
-        "Moyens de broyage (chemises, pièces forgées, billes en céramique...)",
-        "Emballage : nous fournissons des emballages tels que des sacs Jumbobags pour toutes les dimensions, avec possibilité de personnalisation selon les besoins et les spécifications des clients",
-        "Autres produits : autres produits industriels selon les besoins des clients"
-      ]
+        "id": 7,
+        "name": "Consommables miniers",
+        "slug": "mining-consumables",
+        "subtitle": "Tout le nécessaire opérationnel pour soutenir votre production quotidienne",
+        "description": "Fourniture de produits chimiques, outils de forage et équipements de protection individuelle (EPI) indispensables au site.",
+        "image_path": "assets/images/products/thumb-07.png",
+        "banner_image": "assets/images/products/banner-07.jpg",
+        "products_list": [
+            "Produits chimiques (réactifs, soufre, acide sulfurique, agents rx...)",
+            "Moyens de broyage (chemises, pièces forgées, billes en céramique...)",
+            "Emballage : nous fournissons des emballages tels que des sacs Jumbobags pour toutes les dimensions, avec possibilité de personnalisation selon les besoins et les spécifications des clients",
+            "Autres produits : autres produits industriels selon les besoins des clients"
+        ],
+        "thumbnail": "assets/images/products/thumb-07.jpg",
+        "cover": "assets/images/products/banner-07.jpg"
     },
     {
-      "id": 8,
-      "name": "Carburants, graisses et huiles",
-      "slug": "fuels-greases-oils",
-      "subtitle": "Diverse Supplies for All Industrial Operations.",
-      "description": "From the smallest to the largest, every component of your infrastructure matters. We offer a complete range of industrial consumables and accessories to ensure the smooth operation and maintenance of your facilities:",
-      "image_path": "assets/images/products/thumb-07.png",
-      "banner_image": "assets/images/products/banner-07.jpg",
-      "products_list": [
-        "Carburants (gazole, essence et solvant)",
-        "Lubrifiants",
-        "Graisses",
-        "Huiles spéciales"
-      ]
+        "id": 8,
+        "name": "Carburants, graisses et huiles",
+        "slug": "fuels-greases-oils",
+        "subtitle": "L'énergie et la lubrification haute performance pour protéger vos moteurs et engrenages",
+        "description": "Une gamme de lubrifiants et de carburants de qualité premium pour réduire la friction et optimiser la consommation de vos flottes.",
+        "image_path": "assets/images/products/thumb-07.png",
+        "banner_image": "assets/images/products/banner-07.jpg",
+        "products_list": [
+            "Carburants (gazole, essence et solvant)",
+            "Lubrifiants",
+            "Graisses",
+            "Huiles spéciales"
+        ],
+        "thumbnail": "assets/images/products/thumb-08.jpg",
+        "cover": "assets/images/products/banner-08.jpg"
     }
   ]
 }

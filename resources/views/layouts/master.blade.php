@@ -73,8 +73,8 @@
                                 <li class="{{ request()->routeIs('products/*') ? 'active' : '' }}">
                                     <a href="{{ route('products') }}">Products</a>
                                 </li>
-                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}">
-                                    <a href="javascript:void(0)">Contact</a>
+                                <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
+                                    <a href="{{ route('contact') }}">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -139,7 +139,7 @@
                                     <a href="{{ route('products') }}">Products</a>
                                 </li>
                                 <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
-                                    <a href="javascript:void(0)">Contact</a>
+                                    <a href="{{ route('contact') }}">Contact</a>
                                 </li>
                             </ul>
                         </nav>

@@ -184,7 +184,7 @@
                             </div>
                             <div class="rs-contact-content">
                                 <h5 class="rs-contact-title">Ecrivez-nous</h5>
-                                <a href="mailto:contact@sion-investment.com">sion-investment.com</a>
+                                <a href="mailto:contact@sion-invest.com">sion-invest.com</a>
                             </div>
                         </div>
 

@@ -12,7 +12,7 @@
                     <div class="rs-banner-meta-wrapper">
                         <div class="rs-banner-contact-item">
                             <span>Email.</span>
-                            <h6><a href="mailto:contact@sion-investment.com">contact@sion-investment.com</a></h6>
+                            <h6><a href="mailto:contact@sion-invest.com">contact@sion-invest.com</a></h6>
                         </div>
                         {{-- <div class="rs-banner-contact-item">
                             <span>Call.</span>
@@ -67,7 +67,7 @@
                                                     </div>
 
                                                     <div class="rs-feature-video">
-                                                        <a href="https://www.youtube.com/watch?v=6ZxAUMwsU6c"
+                                                        <a href="https://www.youtube.com/watch?v=mI6KQpdxlU0"
                                                             class="rs-play-btn popup-video"><i class="ri-play-fill"></i></a>
                                                     </div>
                                                 </div>

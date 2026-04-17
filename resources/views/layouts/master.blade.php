@@ -258,7 +258,7 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="mailto:contact@sion-investment.com">contact@sion-investment.com</a>
+                                    <a href="mailto:contact@sion-invest.com">contact@sion-invest.com</a>
                                 </div>
                             </li>
                         </ul>

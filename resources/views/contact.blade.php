@@ -206,8 +206,7 @@
                             </div>
                             <div class="rs-contact-content">
                                 <h5 class="rs-contact-title">Appelez-nous </h5>
-                                <a href="tel:243900000000">+243 000 000 000</a>
-                                <a href="tel:243900000000">+243 000 000 000</a>
+                                <a href="tel:+243997786151">+243 997 786 151</a>
                             </div>
                         </div>
                     </div>

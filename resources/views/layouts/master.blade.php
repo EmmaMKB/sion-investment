@@ -242,7 +242,7 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="tel:+243990000000"> +243 999 000 00 00 </a>
+                                    <a href="tel:+243997786151"> +243 997 786 151 </a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center gap-15">

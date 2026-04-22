@@ -224,27 +224,28 @@
                 <div class="col-xl-12">
                     <div class="rs-contact-form">
                         <h3 class="rs-contact-form-title">Laissez-nous un message</h3>
-                        <form id="contact-form" action="https://industrie.rstheme.com/html/assets/mailer.php"
+                        <form action="{{ route('contact.submit') }}"
                             method="POST">
+                            @csrf
                             <div class="row g-5">
                                 <div class="col-md-4">
                                     <div class="rs-contact-input">
-                                        <input id="name" name="name" type="text" placeholder="Nom complet">
+                                        <input id="name" name="name" required type="text" placeholder="Nom complet">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="rs-contact-input">
-                                        <input id="email" name="email" type="email" placeholder="Adresse mail">
+                                        <input id="email" required name="email" type="email" placeholder="Adresse mail">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="rs-contact-input">
-                                        <input id="phone" name="phone" type="text" placeholder="Telephone">
+                                        <input id="phone" required name="phone" type="text" placeholder="Telephone">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="rs-contact-input">
-                                        <textarea id="message" name="message" placeholder="Laissez votre Message"></textarea>
+                                        <textarea id="message" minlength="50" name="message" required placeholder="Laissez votre Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">

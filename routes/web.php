@@ -5,6 +5,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,7 @@ Route::get('/products/{slug}', [ProductController::class, 'get'])->name('product
 
 Route::get('/download/profile', [DownloadController::class, 'profile'])->name('download.profile');
 
-Route::post('/contact', function () {
-    // Handle contact form submission
-    return redirect()->route('contact')->with('success', 'Your message has been sent!');
-})->name('contact.submit');
+Route::post('/contact', [ContactController::class, 'message'])->name('contact.submit');
 
 Route::post('/newsletter/subscribe', [HomeController::class, 'newsletter'])->name('newsletter.subscribe');
+

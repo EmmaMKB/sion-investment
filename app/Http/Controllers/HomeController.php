@@ -30,16 +30,23 @@ class HomeController extends Controller
     function newsletter(Request $request) {
         $email = $request->input('email');
 
-        // Validate email
+        // Validate email format
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            return response()->json(['message' => 'Invalid email address'], 400);
+            return redirect()->route('home')->with('error', 'Invalid email address');
         }
 
-        // Save email to a file (you can also save it to a database)
-        $filePath = storage_path('newsletters.txt');
-        file_put_contents($filePath, $email . PHP_EOL, FILE_APPEND);
+        // Check if email already exists in newsletter
+        $emailExists = \App\Models\Newsletter::where('email', $email)->exists();
+        if ($emailExists) {
+            return redirect()->route('home')->with('error', 'This email is already subscribed to the newsletter');
+        }
 
-        return response()->json(['message' => 'Thank you for subscribing!']);
+        // Save email to newsletter
+        $newsletter = new \App\Models\Newsletter();
+        $newsletter->email = $email;
+        $newsletter->save();
+
+        return redirect()->route('home')->with('success', 'Vous avez souscris à la newsletter !');
 
     }
 }

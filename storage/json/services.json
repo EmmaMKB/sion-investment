@@ -130,6 +130,59 @@
             ],
             "thumbnail": "assets/images/services/services-thumb-08.png",
             "cover": "assets/images/services/cover-08.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Fabrication de containeurs",
+            "slug": "container-fabrication",
+            "subtitle": "L'espace modulable, conçu pour durer.",
+            "description": "Conception et aménagement de conteneurs sur mesure pour vos bureaux, bases de vie ou solutions de stockage sécurisées. Nous transformons le container standard en un outil de travail stratégique : ",
+            "image_path": "assets/images/products/thumb-08.png",
+            "banner_image": "assets/images/products/banner-08.jpg",
+            "services_list": [
+                "Bureaux",
+                "Sanitaires",
+                "Appartements ",
+                "Ateliers",
+                "Tribunes"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-09.png",
+            "cover": "assets/images/services/cover-09.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Gestion des eaux",
+            "slug": "water-management",
+            "subtitle": "Préserver et optimiser votre ressource vitale",
+            "description": "Solutions globales de traitement, d'évacuation et de recyclage des eaux pour une industrie responsable.",
+            "image_path": "assets/images/products/thumb-10.png",
+            "banner_image": "assets/images/products/banner-10.jpg",
+            "services_list": [
+                "Eaux de surface",
+                "Mines souterraines",
+                "Bassins de résidus",
+                "Drainage / Pompage / Traitement",
+                "Etudes hydrologiques"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-10.png",
+            "cover": "assets/images/services/cover-10.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Matériels et services informatiques",
+            "slug": "it-services",
+            "subtitle": "Votre performance à l'ère du digital.",
+            "description": "Fourniture d'équipements informatiques et assistance technique pour une infrastructure connectée et sécurisée.",
+            "image_path": "assets/images/products/thumb-11.png",
+            "banner_image": "assets/images/products/banner-11.jpg",
+            "services_list": [
+                "Equipements informatiques",
+                "Conception & Installation de réseaux informatiques",
+                "Logiciels informatiques",
+                "Conseil technique"
+            ],
+            "thumbnail": "assets/images/services/services-thumb-11.png",
+            "cover": "assets/images/services/cover-11.jpg"
         }
     ]
 }
